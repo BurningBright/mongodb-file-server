@@ -45,6 +45,12 @@ repositories {
 dependencies {
 
 	// 该依赖用于编译阶段
+	compileOnly('org.projectlombok:lombok:1.18.6')
+
+	// 该依赖用于编译阶段
+	compile('org.projectlombok:lombok:1.18.6')
+
+	// 该依赖用于编译阶段
 	compile('org.springframework.boot:spring-boot-starter-web')
 	
 	// 添加 Thymeleaf 的依赖
@@ -54,7 +60,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 	
 	// 添加  Embedded MongoDB 的依赖用于测试
-	compile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
+	//compile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
 	
 	// 该依赖用于测试阶段
 	testCompile('org.springframework.boot:spring-boot-starter-test')
